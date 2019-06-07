@@ -1,6 +1,6 @@
 <template>
-  <v-app dark>
-    <h1 v-if="error.statusCode === 404">
+  <v-app light>
+    <h1 v-if="error.statusCode === 404" class="display-4">
       {{ pageNotFound }}
     </h1>
     <h1 v-else>
@@ -30,7 +30,7 @@ export default {
   },
   data() {
     return {
-      pageNotFound: '404 Not Found',
+      pageNotFound: 'Under Construction',
       otherError: 'An error occurred'
     }
   }
